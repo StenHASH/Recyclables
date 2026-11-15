@@ -3,17 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plastic Bottles | Recyclables</title>
+    <title>Plastic Containers | Recyclables</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra-sections.css">
+ 
+    <script>
+        const RECYCLE_STEPS = {
+            title: "Recycle By Cleaning & Sorting",
+            intro: "Use the buttons on the right to see how you can clean and sort your item",
+            source: {
+                label: "RecycleSpot - Recycle Better Through Proper Prep",
+                url:"https://www.recyclespot.org/blog/recycling/recycle-better-through-proper-prep",
+            },
+            steps: [
+                {
+                    title: "Remove Labels & Stickers",
+                    image: "images/plastic-bottles/step1.jpg",
+                    alt: "Used Plastic Bottle With The Label And Remnant Liquid/Solids",
+                    reason: "<b>Stickers and Labels used on bottles are not recyclable. Remove these from the bottle!</b> <br><br><b>If your bottle cap is of a different material (not plastic), remove and handle separately.</b> <br><br>If there are sticker parts that are too hard to remove with your fingers, try wetting it with water before scraping it off.",
+                    recyclable: false,
+                    nextLabel: "Remove Labels & Others"
+                },
+                {
+                    title: "Rinse Out All Liquids & Solids And Dry",
+                    image: "images/plastic-bottles/step2.jpg",
+                    alt: "Used Plastic Bottle With Liquid/Solids Residue",
+                    reason: "Food residue will cause bacteria buildup, foul stench, and can attract pests. Leftover liquids can leak &amp; stain other items before they can be recycled! <b>Rinse off any food & liquid residue first!</b><br><br><b>Use dish soap if rinsing does not wash out everything or there is oil, then leave to dry</b>.",
+                    recyclable: false,
+                    nextLabel: "Rinse &amp; Dry"
+                },
+                {
+                    title: "Check the Plastic Type",
+                    image: "images/plastic-bottles/step3.jpg",
+                    alt: "Clean Plastic Bottle With The Plastic Type",
+                    reason: "<b>Check the plastic type.</b> This is usually indicated by a number on a triangle or recycling symbol on the plastic.<br><br><b>If it is 1, 2, or 5, then it is recyclable.</b><br><br><b>3, 4 and 6 depend on your location.</b> Make a quick search on the internet to confirm. If you cannot confirm, throw it in the general trash.",
+                    recyclable: false,
+                    nextLabel: "Check Plastic Type"
+                },
+                {
+                    title: "Ready To Recycle",
+                    image: "images/plastic-bottles/step4.jpg",
+                    alt: "Clean Plastic Bottle",
+                    reason: "Once you let it dry and confirm it is a recyclable plastic type in your area, <b>you are ready to recycle!</b><br><br>Throw it in the recycling bin!<br><br>A few leftover droplets is fine as long as it wont spill.",
+                    recyclable: true
+                    // Last step, no next button
+                }
+            ]
+        };
+    </script>
+ 
     <script src="js/header.js" defer></script>
+    <script src="js/steps.js" defer></script>
+    <script src="js/on-the-go.js" defer></script>
+ 
 </head>
 <body data-page="plastic-bottles">
     
     <div id="site-header"></div>
-
+ 
     <main>
-        <!--Item content here-->
+ 
+        <!--Section 1 - Step-By-Step Processing-->
+        <section id="steps-mount"></section>
+    
+        <!--Section 2 - On-The-Go Processing-->
+        <section id="on-the-go"
+                class="extra-section"
+                aria-labelledby="on-the-go-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 2 - QUICK ALTERNATIVE
+                </span>
+ 
+                <h2 id="on-the-go-title">When You're On The Go</h2>
+ 
+                <p>
+                    No sink nearby? You can still make a responsible
+                    disposal decision in a few quick steps.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <!--Step 1-->
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Empty the bottle or hold onto it</h3>
+ 
+                    <p>
+                        Look around and try to find a drinkingwater fountain with a drain. Rinse if you can find one.
+                        <br><br>
+                        Consider if you can hold onto the bottle until you can find a sink or drinking water fountain.
+                        <br><br>
+                        If you cannot do either, then throw it in the trash.
+                    </p>
+                </article>
+ 
+                <!--Step 2-->
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Pour Out & Shake</h3>
+ 
+                    <p>
+                        Pour away as much rinse water as you can.
+                        <br><br>
+                        Give it a few shakes to shake out as much as you can, then screw the cap back on.
+                    </p>
+                </article>
+ 
+                <!--Step 3-->
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Make the bin decision</h3>
+ 
+                    <p>
+                        If only droplets remain, feel free to throw it in the recycling bin.
+                        <br><br>
+                        Make sure the cap is screwed on tightly to prevent small leaks if still wet.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Important:</strong>
+                Not every recycling bin accepts every plastic
+                type. Check the bin label and your building
+                or city's rules.
+ 
+                Do not place food/liquid-filled bottles in recycling.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+                <a
+                href="https://ecology.wa.gov/blog/june-2019/recycle-right-how-empty-is-empty-enough-how-clean"
+                target="_blank"
+                rel="noopener noreferrer">
+                    Department Of Ecology, State of Washington - Recycle Right
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 4 - Reduce-->
+        <section id="reduce"
+                 class="extra-section"
+                 aria-labelledby="reduce-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 4 - REDUCE
+                </span>
+ 
+                <h2 id="reduce-title">Use Fewer Single-Use Bottles</h2>
+ 
+                <p>
+                    The best bottle to recycle is the one you never had to throw out.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Buy Your Own Reusable Bottle</h3>
+ 
+                    <p>
+                        Use and reuse your own washable bottle made of more durable plastic or stainless steel. Its a one-time cost and saves you more money in the long run too!
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Buy The Bigger Option</h3>
+ 
+                    <p>
+                        If you're getting milk or juice for daily consumption, get the bigger bottle options. This reduces your plastic per gallon use over the long run.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Try Glass Where You Can</h3>
+ 
+                    <p>
+                        Pick glass bottles when you have the option. They are more durable as long as you are careful in handling (dont shatter it), and can be reused more.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Reduce comes first:</strong> every one-time bottle you avoid is one you don't have to clean, sort, or find a bin for.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://www.epa.gov/plastics/what-you-can-do-reduce-plastic-waste"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    EPA - What You Can Do To Reduce Plastic Waste
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 5 - Reuse-->
+        <section id="reuse"
+                 class="extra-section"
+                 aria-labelledby="reuse-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 5 - REUSE
+                </span>
+ 
+                <h2 id="reuse-title">Give Your Bottle A Second Life</h2>
+ 
+                <p>
+                    A sturdy bottle that is still in good shape can be used again before it is recycled.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Reuse Water Bottles To Store Water</h3>
+ 
+                    <p>
+                        You can always reuse your plastic water bottle to store water. Refill it at home and chill it in the fridge for a refreshing sip! Throw it out after a few times of reuse!<br><br>You must only use water bottles to store water. Do Not Use Others That Held Other Drinks Or Chemicals!<br><br>Make sure you wash it each refill to prevent bacteria buildup!
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Use It For The Plants</h3>
+ 
+                    <p>
+                        Reuse your bottle to water your plants or as temporary pots! Its easy and flexible since you can cut them into shape with only scissors!
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Household Organizing & DIY</h3>
+ 
+                    <p>
+                        If it is still in good shape, cut it in half and file any sharp edges away. You can reuse these as temporary cups to hold everyday items like plastic grocery bags or for DIY activities.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Retire it when:</strong> it cracks, warps, or stays stained or smelly. Then follow the steps in Section 1 and recycle it.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://www.epa.gov/plastics/what-you-can-do-reduce-plastic-waste"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    EPA - What You Can Do To Reduce Plastic Waste
+                </a>
+            </p>
+ 
+        </section>
+ 
     </main>
-
+ 
 </body>
 </html>
