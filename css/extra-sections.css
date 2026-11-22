@@ -16,7 +16,7 @@
 
 .extra-eyebrow {
     color: #326c25;
-    font-size: 0.78rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.1em;
 }
@@ -40,6 +40,12 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
+}
+
+.extra-image img {
+    padding: 18px 18px;
+    max-width: 300px;
+    align-self: center;
 }
 
 .extra-step-card,

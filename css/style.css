@@ -15,7 +15,8 @@
     --no-text:          #B3261E;
     --no-line:          #F3C4BF;
     --btn-text:         #FFFFFF;
-    --prev-text:        #333333;     
+    --prev-text:        #333333;
+    --state-yes:        #00c000;     
 }
 
 * { box-sizing: border-box; }
@@ -234,7 +235,7 @@ main {
     padding: 0.55em 1.1em;
     font-weight: bold;
     border: 1px solid;
-    border-radius: 999px;
+    border-radius: 5px;
 }
 
 .state-box.is-no {
@@ -245,8 +246,8 @@ main {
 
 .state-box.is-yes {
     color: #FFFFFF;
-    background: var(--brand);
-    border-color: var(--brand);
+    background: var(--state-yes);
+    border-color: var(--brand-dark);
 }
 
 .state-icon { margin-right: 0.4em; }
