@@ -45,6 +45,7 @@
 .extra-image img {
     padding: 18px 18px;
     max-width: 300px;
+    max-height: 400px;
     align-self: center;
 }
 
