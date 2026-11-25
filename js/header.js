@@ -5,7 +5,7 @@ const Catalog = [
     { id: "plastic-cups",       label: "Plastic Cups",               url: "plastic-cups.html"},
     { id: "plastic-bottles",    label: "Plastic Bottles",            url: "plastic-bottles.html" },
     { id: "paper-office",       label: "Office Paper",               url: "paper-office.html"},
-    { id: "paper-food",         label: "Food Paper Container/Bag",   url: "paper-food.html"},
+    { id: "cardboard",          label: "Cardboard",                  url: "cardboard.html"},
     { id: "batteries",          label: "Batteries",                  url: "batteries.html" },
     { id: "metal-cans",         label: "Metal Cans",                 url: "metal-cans.html" },
   ]

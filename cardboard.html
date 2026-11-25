@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plastic Containers | Recyclables</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra-sections.css">
+ 
+    <script>
+        const RECYCLE_STEPS = {
+            title: "Recycle By Cleaning & Sorting",
+            intro: "Use the buttons on the right to see how you can clean and sort your item",
+            source: {
+                label: "American Forest & Paper Association - How To Recycle Your Cardboard Boxes",
+                url:"https://www.afandpa.org/news/2018/heres-how-recycle-your-cardboard-boxes",
+            },
+            steps: [
+                {
+                    title: "Empty Your Box",
+                    image: "images/cardboard/step1.jpg",
+                    alt: "Cardboard box with leftover styrofoam",
+                    reason: "<b>Empty your cardboard box of all materials that are not paper. <br><br>This includes styrofoam, plastic packaging, bubble-wrap & packing peanuts.</b><br><br>Handle those items separately depending on their type.",
+                    recyclable: false,
+                    nextLabel: "Remove All Non-Papers"
+                },
+                {
+                    title: "Check For Cleanliness & Dryness",
+                    image: "images/cardboard/step2.jpg",
+                    alt: "Empty Undamaged Cardboard Box",
+                    reason: "Take a look around your box. <b>If your box is clean and dry, you can move to the next step!<br><br>If it is just water, leave it to dry before continuing.<br><br>If your box is soaked or soiled by food, oil or any other liquid, then flatten it and throw it in the trash.</b><br><br>You do not have to remove tape or labels. Damaged, dented & ripped cardboard is recyclable too!",
+                    recyclable: false,
+                    nextLabel: "Checked My Box"
+                },
+                {
+                    title: "Fold It Up & Flatten",
+                    image: "images/cardboard/step3.jpg",
+                    alt: "Folded & Flattened Cardboard Box",
+                    reason: "<b>Flatten Your Box! This is to save space in your bins for other recyclables.</b><br><br>You can fold and/or cut the ends and edges with scissors to do this.<br><br><b>Step onto the flattened box a few times to ensure it stays as flat as possible!</b>",
+                    recyclable: false,
+                    nextLabel: "Fold & Flatten"
+                },
+                {
+                    title: "Ready To Recycle",
+                    image: "images/cardboard/step4.jpg",
+                    alt: "Flattened Cardboard In Recycling Bin",
+                    reason: "<b>You can toss your flattened box in the paper recycling bin!</b><br><br>Ensure that it lays flat against the sides of the bin to save space.<br><br><b>If it cannot fit, leave it on the side against the bin.</b>",
+                    recyclable: true
+                    // Last step, no next button
+                }
+            ]
+        };
+    </script>
+ 
+    <script src="js/header.js" defer></script>
+    <script src="js/steps.js" defer></script>
+    <script src="js/on-the-go.js" defer></script>
+ 
+</head>
+<body data-page="cardboard">
+    
+    <div id="site-header"></div>
+ 
+    <main>
+ 
+        <!--Section 1 - Step-By-Step Processing-->
+        <section id="steps-mount"></section>
+    
+        <!--Section 2 - On-The-Go Processing-->
+        <section id="on-the-go"
+                class="extra-section"
+                aria-labelledby="on-the-go-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 2 - QUICK ALTERNATIVE
+                </span>
+ 
+                <h2 id="on-the-go-title">When You're On The Go</h2>
+ 
+                <p>
+                    On the move? You can still make a responsible
+                    disposal decision in a few quick steps.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <!--Step 1-->
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Inspect & Flatten</h3>
+ 
+                    <p>
+                        Check that your box is not soaked or soiled.
+                        <br><br>
+                        Flatten it my stepping on it on dry ground and make sure its as compact as possible.
+                        <br><br>
+                        If it is wet or stained, feel free to throw it in the trash. 
+                    </p>
+                </article>
+ 
+                <!--Step 2-->
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Look Around For A Paper Recycling Bin</h3>
+ 
+                    <p>
+                        Take a look around for a Paper Recycling Bin. If you spot one, go ahead and recycle your box!
+                        <br><br>
+                        If it cannot fit, try and fold it once more or leave it on the side.
+                    </p>
+                </article>
+ 
+                <!--Step 3-->
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Hold Onto It Or Not?</h3>
+ 
+                    <p>
+                        If you can't immediately find a recycling bin, decide if the flattened cardboard is light and compact enough for you to hold onto.
+                        <br><br>
+                        If you can, keep it on you and carry on. Keep an eye out for a recycling bin on your activities to drop it off at.
+                        <br><br>
+                        If it is too much of a hassle, find the nearest trash bin and dispose of it there.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Important:</strong>
+                You do not have to remove tape or labels. Dented, ripped and damage cardboard are also able to be recycled!
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+                <a
+                href="https://www.afandpa.org/news/2018/heres-how-recycle-your-cardboard-boxes"
+                target="_blank"
+                rel="noopener noreferrer">
+                    American Forest & Paper Association - How To Recycle Your Cardboard Boxes
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 4 - Reduce-->
+        <section id="reduce"
+                 class="extra-section"
+                 aria-labelledby="reduce-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 4 - REDUCE
+                </span>
+ 
+                <h2 id="reduce-title">Use Fewer Cardboard Boxes</h2>
+ 
+                <p>
+                    A few less boxes make much less hassle.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Combine Online Orders</h3>
+ 
+                    <p>
+                        Most cardboard boxes come from online deliveries. If you are buying from the same seller, make sure you have all items you want in a single order before checkout!
+                        <br><br>
+                        The seller would be as glad to pack all your items into one single cardboard box. Less work for everyone!
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Reuse It At Home</h3>
+ 
+                    <p>
+                        If its in good condition, reuse it to store items away or for moving them around!
+                        <br><br>
+                        One box reused is a box you never had to buy new!
+                    </p>
+                </article>
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Easy Recycling:</strong> Cardboard is key in everyday packaging and is super easy to recycle. Make sure you recycle it everytime!
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://www.businesswaste.co.uk/reduce-waste/how-to-reduce-cardboard-waste/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Business Waste - How To Reduce Cardboard Waste
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 5 - Reuse-->
+        <section id="reuse"
+                 class="extra-section"
+                 aria-labelledby="reuse-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 5 - REUSE
+                </span>
+ 
+                <h2 id="reuse-title">Use It Another Way</h2>
+ 
+                <p>
+                    A cardboard box makes good temporary storage too!
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Reuse Your Boxes For Storage</h3>
+ 
+                    <p>
+                        Cardboard is versatile & sturdy, great as temporary storage boxes within your home.
+                        <br><br>
+                        Try using it to hold trash bags as an outer lining. It will soak up spills but do throw it out when it gets dirty.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Use It For The Move</h3>
+ 
+                    <p>
+                        Moving out soon? Keep your boxes for it! You won't have to get new ones and they help you keep things organized too!
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Checking For Leaks</h3>
+ 
+                    <p>
+                        Suspect a leak from your car or house? Place some flattened cardboard on the area and check back in a few hours!
+                        <br><br>
+                        Soaks & stains on cardboard are highly visible, and it saves your floor from getting dirty!
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Retire it when:</strong> it gets stained, soaked or is starting to peel apart.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://www.sino-corrugated.com/en-gb/mediacenter/industry-news/10-ways-to-reuse-cardboard.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Industry News - SinoCorrugated 2023 - 10 Ways To Reuse Cardboard
+                </a>
+            </p>
+ 
+        </section>
+ 
+    </main>
+ 
+</body>
+</html>
