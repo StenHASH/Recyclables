@@ -5,15 +5,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Office Paper | Recyclables</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra-sections.css">
+ 
+    <script>
+        const RECYCLE_STEPS = {
+            title: "Recycle By Cleaning & Sorting",
+            intro: "Use the buttons on the right to see how you can clean and sort your item",
+            source: {
+                label: "UIC - Recyclable Materials",
+                url:"https://pspm.uic.edu/sustainability/zero-waste-university/recycling-and-zero-waste/recyclable-materials",
+            },
+            steps: [
+                {
+                    title: "Remove Non-Paper Items",
+                    image: "images/paper-office/step1.jpg",
+                    alt: "Stack of office paper with a binder clip, a plastic sleeve and a spiral notebook",
+                    reason: "<b>Pull out everything that is not paper.</b> Take pages out of plastic sleeves and binder covers, and tear off any plastic or metal binding such as spiral coils.<br><br>A few staples are usually fine to leave in.",
+                    recyclable: false,
+                    nextLabel: "Remove Non-Paper"
+                },
+                {
+                    title: "Check For Dryness & Cleanliness",
+                    image: "images/paper-office/step2.jpg",
+                    alt: "A clean dry sheet of paper next to a sheet stained with coffee",
+                    reason: "<b>Only clean, dry paper can be recycled.</b><br><br>If your paper is just a little damp, leave it out to dry before continuing.<br><br><b>If it is soaked or soiled by food, grease or drinks, throw it in the trash.</b> Napkins, tissues and paper towels are not accepted either, even though they are paper.",
+                    recyclable: false,
+                    nextLabel: "Checked My Paper"
+                },
+                {
+                    title: "Check The Paper Type",
+                    image: "images/paper-office/step3.jpg",
+                    alt: "Printer paper, notebook paper, an envelope and sticky notes in a pile, with a used napkin set aside",
+                    reason: "<b>White and colored paper, envelopes, sticky notes and glossy paper (like flyers and magazines) can all be recycled at UIC.</b><br><br><b>Used coffee cups, napkins and paper towels cannot.</b><br><br>Not sure about an item? Check the bin label or email recycling@uic.edu.",
+                    recyclable: false,
+                    nextLabel: "Check Paper Type"
+                },
+                {
+                    title: "Ready To Recycle",
+                    image: "images/paper-office/step4.jpg",
+                    alt: "Sheets of paper being placed into a paper recycling bin",
+                    reason: "<b>You can put your paper in the paper recycling bin!</b><br><br>Check the bin label first. If it is marked only for cans and bottles, keep looking.<br><br>At home, check your building's or city's recycling rules.",
+                    recyclable: true
+                    // Last step, no next button
+                }
+            ]
+        };
+    </script>
+ 
     <script src="js/header.js" defer></script>
+    <script src="js/steps.js" defer></script>
+ 
 </head>
 <body data-page="paper-office">
     
     <div id="site-header"></div>
-
+ 
     <main>
-        <!--Item content here-->
+ 
+        <!--Section 1 - Step-By-Step Processing-->
+        <section id="steps-mount"></section>
+    
+        <!--Section 2 - On-The-Go Processing-->
+        <section id="on-the-go"
+                class="extra-section"
+                aria-labelledby="on-the-go-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 2 - QUICK ALTERNATIVE
+                </span>
+ 
+                <h2 id="on-the-go-title">When You're On The Go</h2>
+ 
+                <p>
+                    Carrying papers between classes? You can still make a responsible
+                    disposal decision in a few quick steps.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <!--Step 1-->
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Keep It Dry &amp; Flat</h3>
+ 
+                    <p>
+                        Slide loose pages into a folder or notebook so they stay flat and dry in your bag.
+                        <br><br>
+                        Paper that gets wet or soiled can't be recycled.
+                    </p>
+                </article>
+ 
+                <!--Step 2-->
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Look Around For A Paper Bin</h3>
+ 
+                    <p>
+                        Take a look around for a bin marked for paper. If you spot one, go ahead and recycle your pages!
+                        <br><br>
+                        Check the bin label first. A bin marked only for cans and bottles is not a paper bin.
+                    </p>
+                </article>
+ 
+                <!--Step 3-->
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Hold Onto It Or Not?</h3>
+ 
+                    <p>
+                        If you can't find a paper bin, decide if your pages are light enough to carry until you do.
+                        <br><br>
+                        If it is too much of a hassle, or the paper is wet or soiled, find the nearest trash bin and dispose of it there.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Important:</strong>
+                Napkins, tissues, paper towels and used coffee cups do not go in paper recycling.
+                Rules for shredded paper vary, so ask your building or recycling program before recycling it.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+                <a
+                href="https://pspm.uic.edu/sustainability/zero-waste-university/recycling-and-zero-waste/recyclable-materials"
+                target="_blank"
+                rel="noopener noreferrer">
+                    UIC - Recyclable Materials
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 4 - Reduce-->
+        <section id="reduce"
+                 class="extra-section"
+                 aria-labelledby="reduce-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 4 - REDUCE
+                </span>
+ 
+                <h2 id="reduce-title">Use Less Paper</h2>
+ 
+                <p>
+                    The easiest paper to recycle is the sheet you never printed.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Print Double-Sided</h3>
+ 
+                    <p>
+                        Change your printer settings to double-sided, so one sheet does the work of two.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Go Digital</h3>
+ 
+                    <p>
+                        Scan or email documents instead of printing them, and read on-screen when you can. Only print what you really need.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Fit More On A Page</h3>
+ 
+                    <p>
+                        Print several slides or pages per sheet in your printer's Print Properties, and delete stray blank pages before you print.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Reduce comes first:</strong> every page you don't print is one you don't have to sort, carry, or find a bin for.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://kingcounty.gov/depts/dnrp/solid-waste/programs/waste-prevention/office-paper-reduction.aspx"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    King County - Reducing Office Paper Consumption
+                </a>
+            </p>
+ 
+        </section>
+ 
+        <!--Section 5 - Reuse-->
+        <section id="reuse"
+                 class="extra-section"
+                 aria-labelledby="reuse-title">
+ 
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 5 - REUSE
+                </span>
+ 
+                <h2 id="reuse-title">Give Paper A Second Life</h2>
+ 
+                <p>
+                    A sheet with one clean side still has a use.
+                </p>
+            </div>
+ 
+            <div class="extra-steps">
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+                    <h3>Use The Blank Side</h3>
+ 
+                    <p>
+                        Use paper that is blank on one side for notes, drafts, scratch work or study practice.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+                    <h3>Make Scrap Notepads</h3>
+ 
+                    <p>
+                        Cut spare sheets into quarters and staple them together for quick lists and reminders.
+                    </p>
+                </article>
+ 
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+                    <h3>Donate Unused Paper &amp; Notebooks</h3>
+ 
+                    <p>
+                        UIC's Great Stuff Exchange accepts clean notebooks, paper, envelopes and binders, and passes them on to students, staff and faculty for free.
+                        <br><br>
+                        Email recycling@uic.edu or see the link below to donate.
+                    </p>
+                </article>
+ 
+            </div>
+ 
+            <div class="extra-note" role="note">
+                <strong>Retire it when:</strong> both sides are used. Then follow the steps in Section 1 and recycle it. Paper that is soiled or soaked goes in the trash.
+            </div>
+ 
+            <p class="extra-source">
+                Source:
+ 
+                <a href="https://pspm.uic.edu/sustainability/zero-waste-university/recycling-and-zero-waste/great-stuff-exchange"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    UIC - Great Stuff Exchange
+                </a>
+            </p>
+ 
+        </section>
+ 
     </main>
-
+ 
 </body>
 </html>
