@@ -61,11 +61,20 @@ function initSteps() {
         badge.textContent = `Step ${index + 1} - ${step.title}`;
         reason.innerHTML = step.reason;
 
-        // Red "Not Yet Recyclable" or green "Recyclable" box
+        // Display the item's current recycling or disposal status
         stateBox.className = "state-box " + (step.recyclable ? "is-yes" : "is-no");
-        stateBox.innerHTML = step.recyclable
-            ? '<span class="state-icon">&#10003;</span> Recyclable!'
-            : '<span class="state-icon">&#10005;</span> Not Yet Recyclable!';
+
+        const defaultStatus = step.recyclable
+            ? "Recyclable!"
+            : "Not Yet Recyclable!";
+
+        const statusText = step.statusText || defaultStatus;
+        const statusIcon = step.recyclable ? "&#10003;" : "&#10005;";
+
+        stateBox.innerHTML = `
+            <span class="state-icon">${statusIcon}</span>
+            ${statusText}
+        `;
 
         // Hidden buttons keep their space, so the other controls dont jump around
         nextBtn.innerHTML = step.nextLabel || "Next Step";
