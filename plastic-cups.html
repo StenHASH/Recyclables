@@ -1,18 +1,389 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Plastic Cups | Recyclables</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra-sections.css">
+
+    <script>
+        const RECYCLE_STEPS = {
+            title: "Prepare & Dispose of Plastic Cups",
+            intro: "Follow the steps to prepare your cup and find out where it belongs.",
+
+            source: {
+                label: "Recycle by City - Chicago Plastic Cups",
+                url: "https://www.recyclebycity.com/chicago/guide/garbage-cart/plastic-cups-disposable"
+            },
+
+            steps: [
+                {
+                    title: "Identify Your Plastic Cup",
+                    image: "images/plastic-cups/step1.jpg",
+                    alt: "Disposable plastic drink cup with a lid and straw",
+                    reason: `
+                        <b>Start by identifying the type of cup you have.</b>
+                        <br><br>
+                        Disposable plastic cups are commonly used for
+                        iced coffee, soda, and other cold drinks.
+                        They may include a plastic lid and straw.
+                        <br><br>
+                        <b>Important:</b> Chicago does not accept
+                        disposable plastic cups in its Blue Cart
+                        recycling program, even when they are clean.
+                    `,
+                    recyclable: false,
+                    statusText: "Check Local Rules",
+                    nextLabel: "Identify Cup"
+                },
+
+                {
+                    title: "Remove Straw & Separate Items",
+                    image: "images/plastic-cups/step2.jpg",
+                    alt: "Disposable cup with lid and straw separated",
+                    reason: `
+                        <b>Remove the straw and any separate accessories.</b>
+                        <br><br>
+                        Plastic straws are not accepted in Chicago's
+                        Blue Cart recycling program.
+                        Place them in the regular trash.
+                        <br><br>
+                        Remove the lid and check whether your local
+                        recycling program accepts it separately.
+                        Do not assume that the lid and cup have
+                        the same disposal requirements.
+                    `,
+                    recyclable: false,
+                    statusText: "Check Local Rules",
+                    nextLabel: "Remove Separate Items"
+                },
+
+                {
+                    title: "Empty & Rinse If Accepted",
+                    image: "images/plastic-cups/step3.jpg",
+                    alt: "Empty disposable plastic drink cup",
+                    reason: `
+                        <b>Pour out any leftover drink or ice.</b>
+                        <br><br>
+                        Do not put cups filled with liquids
+                        into recycling bins.
+                        <br><br>
+                        If your local program specifically accepts
+                        this type of plastic cup, follow its
+                        instructions for cleaning and drying.
+                        <br><br>
+                        <b>Remember:</b> Cleaning a disposable cup
+                        does not make it eligible for Chicago's
+                        Blue Cart program.
+                    `,
+                    recyclable: false,
+                    statusText: "Check Local Rules",
+                    nextLabel: "Empty Cup & Check Rules"
+                },
+
+                {
+                    title: "Make The Disposal Decision",
+                    image: "images/plastic-cups/step4.jpg",
+                    alt: "Empty plastic cup ready for correct disposal",
+                    reason: `
+                        <b>You've completed the disposal steps!</b>
+                        <br><br>
+                        <b>Final Decision: Regular Trash (Chicago)</b>
+                        <br><br>
+                        Disposable plastic drinking cups are not accepted
+                        in Chicago's Blue Cart recycling program,
+                        even when they are clean.
+                        <br><br>
+                        <b>Do not place the cup in Blue Cart recycling.</b>
+                        <br><br>
+                        Other cities and recycling programs may have
+                        different rules. Only recycle the cup if your
+                        specific program confirms that it accepts it.
+                    `,
+                    recyclable: true,
+                    statusText: "Decision Complete!"
+                }
+            ]
+        };
+    </script>
+
     <script src="js/header.js" defer></script>
+    <script src="js/steps.js" defer></script>
+    <script src="js/on-the-go.js" defer></script>
 </head>
+
 <body data-page="plastic-cups">
-    
+
     <div id="site-header"></div>
 
     <main>
-        <!--Item content here-->
+
+        <!-- Section 1 - Cleaning & Sorting -->
+        <section id="steps-mount"></section>
+
+
+        <!-- Section 2 - On-The-Go -->
+        <section id="on-the-go"
+                 class="extra-section"
+                 aria-labelledby="on-the-go-title">
+
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 2 - QUICK ALTERNATIVE
+                </span>
+
+                <h2 id="on-the-go-title">
+                    When You're On The Go
+                </h2>
+
+                <p>
+                    Finished your drink and don't have a sink nearby?
+                    Here's how to make a quick disposal decision.
+                </p>
+            </div>
+
+            <div class="extra-steps">
+
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+
+                    <h3>Empty Your Cup</h3>
+
+                    <p>
+                        Finish your drink or empty any leftover
+                        liquid and ice into an appropriate drain.
+                        Do not pour drinks into a recycling bin.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+
+                    <h3>Separate The Straw</h3>
+
+                    <p>
+                        Remove the straw and dispose of it
+                        in the trash.
+                        <br><br>
+                        Separate the lid and check your local
+                        program's rules before recycling it.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+
+                    <h3>Make The Bin Decision</h3>
+
+                    <p>
+                        In Chicago, disposable plastic cups
+                        belong in the regular trash,
+                        not the Blue Cart.
+                        <br><br>
+                        If you're elsewhere, check the bin
+                        label or local recycling guidance
+                        before deciding.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="extra-note" role="note">
+                <strong>Important:</strong>
+                An empty or clean plastic cup is not automatically
+                recyclable. Chicago's Blue Cart program does not
+                accept disposable plastic cups.
+            </div>
+
+            <p class="extra-source">
+                Source:
+                <a href="https://www.recyclebycity.com/chicago/guide/garbage-cart/plastic-cups-disposable"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Recycle by City - Chicago Plastic Cups
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- Section 4 - Reduce -->
+        <section id="reduce"
+                 class="extra-section"
+                 aria-labelledby="reduce-title">
+
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 4 - REDUCE
+                </span>
+
+                <h2 id="reduce-title">
+                    Use Fewer Single-Use Plastic Cups
+                </h2>
+
+                <p>
+                    Reducing disposable cup usage prevents waste
+                    before it is created.
+                </p>
+            </div>
+
+            <div class="extra-steps">
+
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+
+                    <h3>Bring Your Own Reusable Cup</h3>
+
+                    <p>
+                        Carry a washable cup or tumbler when
+                        getting coffee, water, or other drinks.
+                        <br><br>
+                        Ask whether the business allows
+                        customers to bring their own cups.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+
+                    <h3>Skip Unnecessary Extras</h3>
+
+                    <p>
+                        If you don't need a straw or lid,
+                        ask for your drink without them.
+                        <br><br>
+                        Avoid taking extra disposable cups
+                        when one is enough.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+
+                    <h3>Use Refillable Drink Containers</h3>
+
+                    <p>
+                        Refill your own bottle or cup
+                        instead of choosing a new disposable
+                        cup for every drink.
+                        <br><br>
+                        This can reduce plastic waste
+                        throughout the day.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="extra-note" role="note">
+                <strong>Reduce comes first:</strong>
+                Every disposable cup you avoid is one less
+                item that needs to be discarded.
+            </div>
+
+            <p class="extra-source">
+                Source:
+                <a href="https://www.epa.gov/plastics/what-you-can-do-reduce-plastic-waste"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    EPA - What You Can Do To Reduce Plastic Waste
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- Section 5 - Reuse -->
+        <section id="reuse"
+                 class="extra-section"
+                 aria-labelledby="reuse-title">
+
+            <div class="extra-heading">
+                <span class="extra-eyebrow">
+                    SECTION 5 - REUSE
+                </span>
+
+                <h2 id="reuse-title">
+                    Give Your Plastic Cup A Second Life
+                </h2>
+
+                <p>
+                    A clean disposable cup can sometimes
+                    be repurposed before being discarded.
+                </p>
+            </div>
+
+            <div class="extra-steps">
+
+                <article class="extra-step-card">
+                    <span class="extra-number">1</span>
+
+                    <h3>Use It For Small Plants</h3>
+
+                    <p>
+                        A clean cup can be repurposed as
+                        a temporary seed-starting container.
+                        <br><br>
+                        Make drainage holes carefully and
+                        transfer the plant to a larger pot
+                        when it grows.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">2</span>
+
+                    <h3>Store Small Household Items</h3>
+
+                    <p>
+                        Wash and dry the cup, then use it
+                        to hold pens, pencils, paper clips,
+                        or other small supplies.
+                        <br><br>
+                        Keep lightweight items inside
+                        to avoid tipping it over.
+                    </p>
+                </article>
+
+                <article class="extra-step-card">
+                    <span class="extra-number">3</span>
+
+                    <h3>Use It For Arts & Crafts</h3>
+
+                    <p>
+                        Repurpose a clean cup to hold
+                        paintbrushes, craft supplies,
+                        or small materials during projects.
+                        <br><br>
+                        Avoid exposing disposable cups
+                        to high heat or using damaged cups
+                        for food and drinks.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="extra-note" role="note">
+                <strong>Retire it when:</strong>
+                The cup becomes cracked, damaged,
+                or difficult to clean.
+                In Chicago, disposable plastic cups
+                belong in the regular trash.
+            </div>
+
+            <p class="extra-source">
+                Source:
+                <a href="https://www.epa.gov/plastics/what-you-can-do-reduce-plastic-waste"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    EPA - What You Can Do To Reduce Plastic Waste
+                </a>
+            </p>
+
+        </section>
+
     </main>
 
 </body>
